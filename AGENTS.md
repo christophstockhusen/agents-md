@@ -122,6 +122,9 @@ flag them:
   trailing period.
 - Explain *what* changed and *why* in the body when it's not obvious from
   the subject and diff alone — not a line-by-line narration of *how*.
+- Don't add AI co-author trailers (`Co-Authored-By`, session links, etc.).
+  The human who reviews and ships the change is the author of record —
+  they're the one accountable for it, and authorship should signal that.
 
 ## Stopping points
 
