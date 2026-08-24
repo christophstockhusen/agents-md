@@ -9,6 +9,9 @@ If the repository already has an established style or pattern that
 conflicts with something below, follow the repository. This file is a
 default for cases the codebase doesn't already decide.
 
+Check for a `CONTRIBUTING.md` (or equivalent) and follow it for anything
+it covers — this file fills the gaps it leaves, not the other way around.
+
 Don't apply every rule below mechanically regardless of context. Think
 about what the task actually needs, then apply the rules that are
 relevant — blindly pattern-matching every rule against every change ends
