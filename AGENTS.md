@@ -27,6 +27,16 @@ up misapplying rules to situations they don't fit.
 - Don't extract single-use logic into a helper function purely to make the
   diff look smaller — prioritize good design over a small diff.
 
+## User-facing impact
+
+- If a change alters user-visible behavior or a public/external API
+  contract — even as a side effect of a pure-looking cleanup — flag it
+  explicitly rather than shipping it silently. That's a decision someone
+  outside engineering may need to make, not just a code-quality call.
+- Don't remove or alter analytics, telemetry, or logging calls as a side
+  effect of a refactor without calling it out. They may be relied on for
+  product metrics in ways that aren't visible from the code alone.
+
 ## Design judgment
 
 - Before writing new logic, look for an existing function, utility, or
